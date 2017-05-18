@@ -1,4 +1,4 @@
-﻿using System;
+ //﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security;
@@ -30,9 +30,9 @@ namespace BrowserAPP
   {
     public static ListItemCollection GetList(string listName)
     {
-      var tenant = BrowserAPP.Properties.Settings.Default.SPSite;
-      var userName = BrowserAPP.Properties.Settings.Default.SPUser;
-      var passwordString = BrowserAPP.Properties.Settings.Default.SPPass;
+      var tenant = BrowserAPP.Properties.Settings.Default.SPSite; //Must set the sharepoint site url
+      var userName = BrowserAPP.Properties.Settings.Default.SPUser; //username
+      var passwordString = BrowserAPP.Properties.Settings.Default.SPPass; //password
 
       using (var ctx = new ClientContext(tenant))
       {
