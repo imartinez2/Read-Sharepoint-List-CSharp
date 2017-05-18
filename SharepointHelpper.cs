@@ -1,10 +1,13 @@
- //﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.SharePoint.Client;
+// Must import NuGet Microsoft.SharePointOnline.CSOM
+// https://msdn.microsoft.com/en-us/library/office/jj193041.aspx
+
 
 
 namespace BrowserAPP
